@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="myjartest@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="myjartest">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="amlapi"/>
+    <schema id="4" parent="1" name="courier"/>
+    <schema id="5" parent="1" name="dailymealdb"/>
+    <schema id="6" parent="1" name="healthyfooddb"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="laravel_store"/>
+    <schema id="9" parent="1" name="laravel_test"/>
+    <schema id="10" parent="1" name="museoliitto"/>
+    <schema id="11" parent="1" name="museoliitto_frontend"/>
+    <schema id="12" parent="1" name="mysql"/>
+    <schema id="13" parent="1" name="orbizone"/>
+    <schema id="14" parent="1" name="performance_schema"/>
+    <schema id="15" parent="1" name="sys"/>
+    <schema id="16" parent="1" name="tholoukalendar"/>
+    <schema id="17" parent="1" name="webforum"/>
+    <schema id="18" parent="1" name="working_hours"/>
+    <schema id="19" parent="1" name="wp"/>
+    <table id="20" parent="2" name="users"/>
+    <column id="21" parent="20" name="id">
+      <Position>1</Position>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="22" parent="20" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="20" name="phone">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="20" name="data1">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="25" parent="20" name="data2">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="26" parent="20" name="data3">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="27" parent="20" name="data4">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="28" parent="20" name="data5">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="29" parent="20" name="data6">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="20" name="data7">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="31" parent="20" name="data8">
+      <Position>11</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="32" parent="20" name="created_at">
+      <Position>12</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <index id="33" parent="20" name="unique_email">
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="34" parent="20" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="35" parent="20" name="unique_email">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>unique_email</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
